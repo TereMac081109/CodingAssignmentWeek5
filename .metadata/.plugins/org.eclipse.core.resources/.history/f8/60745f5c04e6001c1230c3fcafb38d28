@@ -1,0 +1,13 @@
+package week5;
+
+public class Week5CodingAssignment {
+	public static void main(String[] args) {
+		
+		Logger asteriskLogger = new AsteriskLogger();
+		
+		Logger spacedLogger = new SpacedLogger();
+		
+	}
+
+	
+}

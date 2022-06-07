@@ -1,0 +1,17 @@
+package week5;
+
+public class SpacedLogger implements Logger {
+
+	@Override
+	public void Log(String textInput) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void Error(String textInput) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

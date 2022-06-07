@@ -1,0 +1,23 @@
+package week5;
+
+public class SpacedLogger implements Logger {
+
+	@Override
+	public void Log(String textInput) {
+	
+		StringBuilder builder = new StringBuilder();
+		
+		for (int i = 0; i < textInput.length(); i += 1) {
+			builder.append(textInput.charAt(i)).append(" ");
+		}
+		
+		System.out.println(builder);
+	}
+
+	@Override
+	public void Error(String textInput) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

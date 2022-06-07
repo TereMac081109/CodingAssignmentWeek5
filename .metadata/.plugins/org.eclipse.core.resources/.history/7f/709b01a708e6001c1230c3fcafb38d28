@@ -1,0 +1,23 @@
+package week5;
+
+public class AsteriskLogger implements Logger {
+
+	@Override
+	public void Log(String textInput) {
+
+		System.out.println(addAsterisk(textInput));
+
+	}
+
+	private String addAsterisk(String textInput) {
+		
+		return "***" + textInput + "***";
+	}
+
+	@Override
+	public void Error(String textInput) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

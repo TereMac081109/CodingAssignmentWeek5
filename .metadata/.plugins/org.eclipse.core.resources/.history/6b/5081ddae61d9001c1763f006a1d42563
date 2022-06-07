@@ -1,0 +1,25 @@
+package Week3;
+
+import java.util.Arrays;
+
+public class ArraysReview {
+
+	static int[] buildArray(int num) {
+		// Write your code below
+	    int[] numArray = new int[num];
+		for (int i = 0; i < num; i++ ) {
+			numArray[i] = i;			
+		}
+		return numArray;			
+	}
+
+	
+	public static void main(String[] args) {
+		
+		int num = 8;
+		System.out.println("Your array is: ");
+		System.out.println(Arrays.toString(buildArray(num)));
+		
+	}
+	
+}

@@ -1,0 +1,75 @@
+package Week3;
+
+import java.util.Arrays;
+
+public class ArraysReview {
+	
+	static void changeTwo(int a, int b, int[] arr) {
+        // Add your code below this line 
+        int [] arrNew = new int[arr.length];
+        arrNew[0] = a;
+        arrNew[arr.length-1] = b;
+        
+        for (int i = 1; i<arr.length-2; i++) {
+        	arrNew[i] = arr[i];
+        }
+        
+        for (int x = 0; x<arr.length; x++ ) {
+        	System.out.println(arrNew[x]);
+        }
+        
+	}
+
+//	static int[] buildArray(int num) {
+//		// Write your code below
+//	    int[] numArray = new int[num];
+//		for (int i = 0; i < num; i++ ) {
+//			numArray[i] = i;			
+//		}
+//		return numArray;			
+//	}
+
+//	static int createInt(int num1, int num2, int num3, int num4, int num5, int num6) {
+//		// Write your code below this line 
+//		int[] arrayInt = {num1, num2, num3,num4,num5,num6};
+//		return arrayInt[arrayInt.length - 1];
+//		
+//	}
+	
+	
+	public static void main(String[] args) {
+		
+
+			int a,b;
+			a = 1;
+			b = 1;
+			
+			int[] arr = { 3, 7, 0, 4, -6, 10, 55 };
+			changeTwo(a, b, arr);
+		}
+		
+		
+//		int num = 8;
+//		System.out.println("Your array is: ");
+//		System.out.println(Arrays.toString(buildArray(num)));
+		
+//		int num1, num2, num3, num4, num5, num6; 
+//		num1 = 23;
+//		num2 = 43;
+//		num3 = 897;
+//		num4 = 342;
+//		num5 = -112;
+//		num6 = 45;
+//		
+//		int returnedInt = createInt(num1, num2, num3, num4, num5, num6);
+//		System.out.println("The last number of the array is " + returnedInt);
+	
+//		int[] arr = new int[5];
+//		for (int i=1; i<=5;i++) {
+//			arr[i-1]=i;
+//		}
+//		
+//		System.out.println(arr[2]);
+//	}
+	
+}

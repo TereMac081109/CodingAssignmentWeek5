@@ -1,0 +1,30 @@
+package week5;
+
+public class AsteriskLogger implements Logger {
+
+	@Override
+	public void Log(String textInput) {
+
+		System.out.println(addAsterisk(textInput));
+
+	}
+
+	private String addAsterisk(String textInput) {
+		
+		return "***ERROR: " + textInput + "***";
+	}
+
+	@Override
+	public void Error(String textInput) {
+
+		String outputText = addAsterisk(textInput);
+		String asteriskBorder = "*".repeat(outputText.length());
+		
+		System.out.println(asteriskBorder);
+		System.out.println(outputText);
+		System.out.println(asteriskBorder);
+		
+
+	}
+
+}

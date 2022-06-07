@@ -1,0 +1,37 @@
+package Week3;
+
+public class Week3CodingAssignment {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int [] ages = new int[] {3, 9, 23, 64, 2, 8, 28, 93};
+		subtractFirstFromLast(ages);
+		
+		int newAge = 10;
+		int[] agesPlusOne = addNewAgeToArray(ages, newAge);
+		subtractFirstFromLast(agesPlusOne);
+	}
+
+	public static void subtractFirstFromLast(int[] ages) {
+
+		System.out.println(ages[ages.length-1] - ages[0]);
+		
+	}
+	
+	public static int[] addNewAgeToArray (int[] ages, int newAge) {
+		
+		int [] arrayWithNewAge = new int[ages.length+1];
+		
+		arrayWithNewAge[0] = newAge;
+		
+		for (int i = 1; i < arrayWithNewAge.length; i++) {
+			arrayWithNewAge[i] = ages[i-1];
+		}
+	
+		return arrayWithNewAge;
+		
+		
+		
+	}
+}

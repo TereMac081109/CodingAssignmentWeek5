@@ -1,0 +1,19 @@
+package week5;
+
+public class App {
+
+	public static void main(String[] args) {
+		
+		Logger asteriskLogger = new AsteriskLogger();
+		
+		Logger spacedLogger = new SpacedLogger();
+		
+		asteriskLogger.Log("Hi There!");
+		asteriskLogger.Error("Hi There!");
+		
+		spacedLogger.Log("Welcome");
+		spacedLogger.Error("Welcome");
+		
+	}
+
+}
